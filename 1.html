@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>나를 소개합니다</title>
+    <meta charset="utf-8">
+    <style>
+        h1{text-align:center;
+        border-width:10px;
+        border-color:red;
+        border-style:solid;
+        padding:10px;
+        margin:10px;}
+        div {border:5px solid gray;display:grid;grid-template-columns:100px 1fr;}
+        #gri{border:5px solid pink}
+        @media(max-width:700px){#gri{display:none;}}
+        
+    </style>
+
+</head> 
+
+    <body>
+    <h1>나를 소개합니다</h1>
+    <li><a href="http://cheongra.icehs.kr/main.do" type="청라고등학교">청라고등학교</a></li>
+    <img src="ㅊㄹㄱ.webp" width="100">
+    <div id="gri">
+    <div>dpdprEk</div>
+    <div>dpdprEK!</div> 
+    </div>
+    
+
+    <input type="button" value="day" onclick="
+    if(document.querySelector('body').dataset.mode ==='night'){
+    
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('body').dataset.mode='day';
+    this.value='day';
+    }
+    else{
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('body').dataset.mode='night';
+    this.value='night';}">
+</body>
+
+</html>
